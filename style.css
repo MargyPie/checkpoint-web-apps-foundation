@@ -88,7 +88,10 @@ ul {
   justify-content: center;
 }
 
-.check-equality::after {
+check-satisfied {
+  content: " ✅";
+}
+/* .check-equality::after {
   content: " ✅";
 }
 
@@ -106,4 +109,4 @@ ul {
 
 .check-length::after {
   content: " 😋";
-}
+} */
