@@ -11,17 +11,33 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400&display=swap"
         rel="stylesheet">
     <title>Password Toggle</title>
 </head>
 
 <body>
+
     <main>
-        <div class="center-parent">
+        <header>
+            <h1>Password Check</h1>
+        </header>
+        <section class="input-field">
             <input type="password">
-            <button class="hiddenPw">Show Password</button>
-        </div>
+            <input type="password">
+            <button class="hiddenPw"
+                style="color: white; background-color: black; border: 1px solid black; border-radius: 2px; padding: 0.5rem;">Show
+                Password</button>
+        </section>
+        <section class="checking-fields">
+            <ul>
+                <li class="check-equality">Passwords are equal</li>
+                <li class="check-lower">Lower Case Letters</li>
+                <li class="check-upper">Upper Case Letters</li>
+                <li class="check-num">Contains Numbers</li>
+                <li class="check-length">At least 10 characters long</li>
+            </ul>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

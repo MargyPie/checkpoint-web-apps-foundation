@@ -1,5 +1,6 @@
 const btn = document.querySelector("button");
 
+/***************** Button: Toggle Password Visibility **************/
 function passwordVisibility() {
   const inputBox = document.querySelector("input");
 
@@ -12,6 +13,12 @@ function passwordVisibility() {
     inputBox.setAttribute("type", "password");
     btn.textContent = "Show Password";
   }
+
+  /***************** Check: Equality ****************/
+  /***************** Check: Lower-Case ****************/
+  /***************** Check: Upper-Case ****************/
+  /***************** Check: Number ****************/
+  /***************** Check: Length ****************/
 }
 
 btn.addEventListener("click", passwordVisibility);

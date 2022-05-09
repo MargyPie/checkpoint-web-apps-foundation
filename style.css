@@ -1,8 +1,109 @@
-.center-parent {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: lightsalmon;
+  /* position: absolute;
+  top: 20%; 
+  left: 40%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*===========================================================*/
+/*=================== Specific Stylings =====================*/
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main > * {
+  margin-top: 1rem;
+}
+
+/*** From medium breakpoint down, two columns ***/
+@media screen and (min-width: 700px) {
+  section {
+    position: relative;
+    display: inline-flex;
+  }
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+input {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+/* .hiddenPw {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.5rem;
+}*/
+
+.input-field > *,
+ul > * {
+  margin-top: 0.5rem;
+}
+
+h1 {
+  font-family: Lobster;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 0.2rem 0.2rem 0px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style-type: none;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-equality::after {
+  content: " ✅";
+}
+
+.check-lower::after {
+  content: " ❌";
+}
+
+.check-upper::after {
+  content: " 😋";
+}
+
+.check-num::after {
+  content: " 😋";
+}
+
+.check-length::after {
+  content: " 😋";
 }
